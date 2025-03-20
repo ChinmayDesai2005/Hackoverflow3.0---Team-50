@@ -1,0 +1,299 @@
+.event-card-container {
+  width: 100%;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  background-color: #f4f7fe;
+  min-height: calc(100vh - 40px);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  margin-bottom: 24px;
+}
+
+.tab-wrapper {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #e9edf7;
+  padding-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #2b3674;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  color: #ffffff;
+  background-color: #4318ff;
+  box-shadow: 0 4px 8px rgba(67, 24, 255, 0.2);
+}
+
+.tab:hover {
+  background-color: #e0e5f5;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  height: 100%;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.card-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e9edf7;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-checkbox:hover {
+  background-color: #f1f3fa;
+}
+
+.card {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e9edf7;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  min-height: 300px;
+  padding-bottom: 40px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.card-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headline {
+  color: #2b3674;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.title {
+  color: #2b3674;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.text {
+  color: #2b3674;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-label {
+  color: #a3aed0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #2b3674;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.source {
+  position: absolute;
+  bottom: 16px;
+  left: 24px;
+  color: #a3aed0;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 1;
+  padding: 8px 0;
+  background: linear-gradient(to bottom, transparent, white 15%);
+  width: calc(100% - 48px);
+}
+
+.card-right {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    flex-direction: column;
+  }
+
+  .card-right {
+    width: 100%;
+    order: 1;
+  }
+
+  .card-left {
+    order: 2;
+  }
+
+  .card-center {
+    order: 3;
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .info-grid {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-card-container {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .card-content {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .card-image {
+    height: 150px;
+  }
+
+  .info-grid {
+    gap: 10px;
+  }
+
+  .headline {
+    font-size: 20px;
+  }
+
+  .source {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-height: 400px;
+    padding-bottom: 50px;
+  }
+
+  .source {
+    bottom: 12px;
+    left: 16px;
+    width: calc(100% - 32px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    min-height: 450px;
+  }
+
+  .source {
+    bottom: 8px;
+    left: 16px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}

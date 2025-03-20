@@ -1,0 +1,14 @@
+/* Add fonts here */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Add variables here */
+
+:root {
+  --white: #ffffff;
+  --primary-color: #2b3674;
+  --primary-color-light: #4957a7;
+  --accent-color: #fc7753;
+  --light-gray: #e4e4e4;
+  --font-family: "Inter", sans-serif;
+  --warning-red: #ff0f0f;
+}
