@@ -1,0 +1,47 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "hackoverflow 3.0 project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm-run-all --parallel server frontend",
+    "server": "nodemon -r dotenv/config --experimental-json-modules backend/index.js",
+    "frontend": "cd client && npm run dev"
+  },
+  "keywords": [
+    "disaster",
+    "management",
+    "floods",
+    "disaster",
+    "earthquake"
+  ],
+  "author": "chinmay desai, gautam rai, shaanveer singh, atharva deore",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.2.0",
+    "haversine-distance": "^1.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "leaflet-geosearch": "^4.2.0",
+    "moment-timezone": "^0.5.46",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.1",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7",
+    "npm-run-all": "^4.1.5",
+    "razorpay": "^2.9.5",
+    "rehype-raw": "^7.0.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "twilio": "^5.3.6"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1"
+  }
+}
