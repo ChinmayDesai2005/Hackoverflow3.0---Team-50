@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "657202519702",
+    "firebase_url": "https://sihinternal-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sihinternal",
+    "storage_bucket": "sihinternal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657202519702:android:d475dc3a38660b9cb5ecb7",
+        "android_client_info": {
+          "package_name": "com.example.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8tA9v4hyAF4Ac__Q7FF75BnnJVrKUk5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
