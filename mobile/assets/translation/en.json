@@ -1,0 +1,9 @@
+{
+    "welcome_text": "Welcome to Aapda Mitra",
+    "name": "Name",
+    "email": "Email",
+    "aadhar_number": "Aadhaar Number",
+    "phone_number": "Phone Number",
+    "register": "Register",
+    "login": "Login"
+  }
